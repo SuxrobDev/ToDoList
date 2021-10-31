@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript 3-lesson</title>
+    <link rel="stylesheet" href="../Javascript%208-lesson/bootsrtap-4.5.3/css/bootstrap.min.css">
+</head>
+<body>
+<section>
+    <div class="container-fluid my-5">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header bg-info text-white text-center">
+                        Adding new task
+                    </div>
+                    <div class="card-body">
+                        <form class="text-center" name="task-form">
+                            <textarea placeholder="Task description" class="form-control mb-2" name="task" id="" cols="30" rows="3"></textarea>
+                            <select name="staff" class="form-control mb-2">
+                                <option value="">Select a staff</option>
+                                <option value="John">John Doe</option>
+                                <option value="Chris">Chris Brown</option>
+                                <option value="Sam">Sam Willson</option>
+                            </select>
+                            <label for="start_date">Start date:</label>
+                            <input type="date" id="start_date" class="form-control mb-2" name="start_date">
+                            <label for="end_date">End date:</label>
+                            <input type="date" id="end_date" class="form-control mb-2" name="end_date">
+                            <select name="status" class="form-control mb-2">
+                                <option value="">Select a status</option>
+                                <option value="pending">Pending</option>
+                                <option value="doing">Doing</option>
+                                <option value="done">Done</option>
+                            </select>
+                            <button onclick="addTask()" type="button" class="btn btn-outline-dark btn-block">Add</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col text-center">
+                <div class="card">
+                    <div class="card-header bg-danger text-white">
+                        Pending List
+                    </div>
+                    <div class="card-body" id="pending_list">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col text-center">
+                <div class="card">
+                    <div class="card-header bg-warning text-white">
+                        Doing List
+                    </div>
+                    <div class="card-body" id="doing_list">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col text-center">
+                <div class="card">
+                    <div class="card-header bg-success text-white">
+                        Done List
+                    </div>
+                    <div class="card-body" id="done_list">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col text-center">
+                <div class="card">
+                    <div class="card-header bg-secondary text-white">
+                        Rejected List
+                    </div>
+                    <div class="card-body" id="rejected_list">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+<script src="../Javascript%208-lesson/bootsrtap-4.5.3/js/bootstrap.js"></script>
+<script src="../Javascript%208-lesson/bootsrtap-4.5.3/js/jquery-3.3.1.slim.min.js"></script>
+<script src="../Javascript%208-lesson/bootsrtap-4.5.3/js/popper.min.js"></script>
+<script src="JS/index.js"></script>
+</html>
